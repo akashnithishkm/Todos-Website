@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Todo App</title>
+
+    <!-- Optional: Font (keeps file small if your panel blocks external fonts) -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <h1 class="title">Todos</h1>
+            <p class="subtitle">Create and save your tasks</p>
+        </header>
+
+        <main>
+            <section class="create">
+                <input id="todoUserInput" class="todo-user-input" type="text" placeholder="What needs to be done?" />
+                <div class="controls">
+                    <button id="addTodoButton" class="btn primary">Add</button>
+                    <button id="saveTodoButton" class="btn">Save</button>
+                </div>
+            </section>
+
+            <section class="list-section">
+                <h2 class="list-heading">My Tasks</h2>
+                <ul id="todoItemsContainer" class="todo-items-container" aria-live="polite"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
